@@ -1,0 +1,271 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    scroll-behavior: smooth;
+}
+/* Navbar */
+.navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    transition: background-color 0.4s ease, box-shadow 0.4s ease;
+}
+
+.navbar.transparent {
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.navbar.scrolled {
+    background-color: #1e1e1e;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.logo {
+    height: 50px;
+}
+.nav-links {
+    display: flex;
+    gap: 1rem;
+}
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+.nav-links a:hover {
+    color: #f1c40f;
+}
+.menu-toggle {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: white;
+}
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background: #1e1e1e;
+        width: 100%;
+        flex-direction: column;
+        padding: 1rem;
+    }
+    .nav-links.open {
+        display: flex;
+    }
+    .menu-toggle {
+        display: block;
+    }
+}
+/* Hero */
+
+.hero {
+    position: relative;
+    height: 100vh;
+    background: url('https://media.istockphoto.com/id/1485996637/it/foto/vista-dallalto-lispezione-degli-edifici-dellingegnere-del-team-utilizza-il-tablet-e-il.jpg?s=612x612&w=0&k=20&c=OWJgvRPuIUd4f6362JXsl8DYbOXJqjiht_JnGo07aw0=') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 0 1.5rem;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.2));
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    padding: 0 1rem;
+    max-width: 800px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.3rem;
+}
+
+.cta-hero a {
+    display: inline-block;
+    margin: 0.5rem;
+    padding: 0.8rem 1.8rem;
+    font-size: 1rem;
+    font-weight: 600;
+    background: #e67e22;
+    color: white;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.cta-hero a:hover {
+    background: #cf711b;
+    transform: translateY(-2px);
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .hero-content {
+        padding-bottom: 3.5rem; /* oppure 15-20vh se serve più spazio */
+    }
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+    .hero p {
+        font-size: 1rem;
+    }
+    .cta-hero a {
+        width: 80%;
+        font-size: 1rem;
+    }
+}
+
+/* Onda animata */
+.hero-wave {
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 120px;
+    overflow: hidden;
+    line-height: 0;
+    z-index: 2; /* sopra la sezione successiva */
+}
+
+.hero-wave svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.hero-wave path {
+    fill: #f5f5f5;
+}
+
+/* Animazione leggera */
+@keyframes waveMove {
+    0% {
+        d: path("M0,224 C480,320 960,160 1440,256 L1440,320 L0,320 Z");
+    }
+    100% {
+        d: path("M0,240 C480,280 960,200 1440,240 L1440,320 L0,320 Z");
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-wave {
+        height: 80px; /* più piccola */
+    }
+
+    .hero-wave svg {
+        height: 80px;
+    }
+}
+
+.section-title {
+    font-size: 2.5rem;
+    color: #4b1e1e; /* rosso vino */
+    margin-bottom: 2rem; /* margine inferiore aggiunto */
+}
+
+.servizi-section {
+    background-color: #f5f5f5;
+    padding: 5rem 2rem;
+    text-align: center;
+}
+
+.servizi-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.servizio-card {
+    background: white;
+    border-radius: 16px;
+    padding: 2.5rem 1.5rem;
+    max-width: 300px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.servizio-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.icon-box {
+    font-size: 2.5rem;
+    color: #e67e22;
+    margin-bottom: 1rem;
+}
+
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+}
+.gallery img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+.gallery img:hover {
+    transform: scale(1.05);
+}
+.cta {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 3rem 2rem;
+    border-radius: 20px;
+}
+.cta h2 { margin-bottom: 1rem; }
+.cta a {
+    background: #f1c40f;
+    color: #222;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+.cta a:hover {
+    background: #d4ac0d;
+}
+footer {
+    background: #111;
+    color: #aaa;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 3rem;
+}
