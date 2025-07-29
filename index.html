@@ -20,7 +20,7 @@
     <img src="EdilBullari.png" alt="Logo" class="logo">
     <div class="menu-toggle" id="menu-toggle">&#9776;</div>
     <nav class="nav-links" id="nav">
-        <a href="#home">Home</a>
+        <a href="#hero">Home</a>
         <a href="#servizi">Servizi</a>
         <a href="#progetti">Progetti</a>
         <a href="#contatti">Contatti</a>
@@ -28,7 +28,7 @@
 </header>
 
 <!-- HERO -->
-<section class="hero">
+<section class="hero" id="hero">
     <div class="hero-overlay"></div>
     <div class="hero-content" data-aos="fade-up">
         <h1>Realizza i tuoi sogni</h1>
@@ -46,30 +46,53 @@
 </section>
 
 <section class="servizi-section" id="servizi">
-    <div class="container">
-        <h2 class="section-title" data-aos="fade-up">I nostri servizi</h2>
-        <div class="servizi-grid">
-            <div class="servizio-card" data-aos="fade-right">
-                <div class="icon-box">
-                    <i class="fas fa-tools"></i>
-                </div>
-                <h3>Ristrutturazioni</h3>
-                <p>Interventi completi per abitazioni, uffici e attività commerciali.</p>
-            </div>
-            <div class="servizio-card" data-aos="fade-up">
-                <div class="icon-box">
-                    <i class="fas fa-home"></i>
-                </div>
-                <h3>Nuove Costruzioni</h3>
-                <p>Edifici moderni e su misura, dalla progettazione alla consegna.</p>
-            </div>
-            <div class="servizio-card" data-aos="fade-left">
-                <div class="icon-box">
-                    <i class="fas fa-hotel"></i>
-                </div>
-                <h3>Settore Alberghiero</h3>
-                <p>Soluzioni edili per hotel, B&B e strutture ricettive.</p>
-            </div>
+    <h2 class="section-title" data-aos="fade-up">I nostri servizi</h2>
+
+    <div class="servizio" data-aos="fade-right">
+        <div class="servizio-img"><img src="https://media.istockphoto.com/id/991867390/it/foto/quella-cosa-%C3%A8-la-prossima-sul-nostro-piano-abitativo.jpg?s=612x612&w=0&k=20&c=wtWId8Rdl6rMBpZ93GGUsJ9whAiAUkofyaZHXJOTOj0=" alt="Ristrutturazioni interne"></div>
+        <div class="servizio-testo">
+            <h3>Ristrutturazione Interni</h3>
+            <p>Soluzioni “chiavi in mano” per appartamenti, uffici e negozi, dal design alla realizzazione completa.</p>
+        </div>
+    </div>
+
+    <div class="servizio reverse" data-aos="fade-left">
+        <div class="servizio-img"><img src="https://media.istockphoto.com/id/1001959072/it/foto/facciata-del-vecchio-edificio-impalcature-con-rete-protettiva-verde.jpg?s=612x612&w=0&k=20&c=-8drogyJO5_6y7pW_OCCwFwvoa-_qj3QMCRXvEdVHxg=" alt="Ristrutturazione tetti e facciate"></div>
+        <div class="servizio-testo">
+            <h3>Ristrutturazione Tetti & Facciate</h3>
+            <p>Interventi su tetti, facciate, impermeabilizzazioni, grondaie e cappotti termici per efficienza e bellezza.</p>
+        </div>
+    </div>
+
+    <div class="servizio" data-aos="fade-right">
+        <div class="servizio-img"><img src="https://media.istockphoto.com/id/941965912/it/foto/lavoro-di-squadra-in-cantiere-da-vicino.jpg?s=612x612&w=0&k=20&c=vElluDVcP2arFsAa91JQN0te0BiXcMHSAL231wHUHl4=" alt="Lavori in cartongesso"></div>
+        <div class="servizio-testo">
+            <h3>Lavori in Cartongesso & Imbiancature</h3>
+            <p>Cappotti interni, decorazioni mutevoli, imbiancatura pareti con trattamenti antimuffa e verniciature funzionali.</p>
+        </div>
+    </div>
+
+    <div class="servizio reverse" data-aos="fade-left">
+        <div class="servizio-img"><img src="https://media.istockphoto.com/id/2186289496/it/foto/man-working-on-house-insulation.jpg?s=612x612&w=0&k=20&c=wNZGYS0IwOYTrIcvbc2WnFYBxls8l8Nw_qiDpBFsiOI=" alt="Cappotto termico"></div>
+        <div class="servizio-testo">
+            <h3>Cappotto Termico & Isolamenti</h3>
+            <p>Installazione cappotti termici ed isolamenti per riduzione dei consumi e miglior comfort abitativo.</p>
+        </div>
+    </div>
+
+    <div class="servizio" data-aos="fade-right">
+        <div class="servizio-img"><img src="https://media.istockphoto.com/id/464999245/it/foto/nuovo-telaio-di-costruzione-di-una-casa.jpg?s=612x612&w=0&k=20&c=OpdS4_qrQysJbbY1zgN_XiMNVRc37cH09ePytz5AgX0=" alt="Costruzioni complete"></div>
+        <div class="servizio-testo">
+            <h3>Costruzioni Complete</h3>
+            <p>Progettazione e realizzazione edilizia su misura, gestione completa del progetto “chiavi in mano”.</p>
+        </div>
+    </div>
+
+    <div class="servizio reverse" data-aos="fade-left">
+        <div class="servizio-img"><img src="https://media.istockphoto.com/id/1337247350/it/foto/le-mani-del-tiler-stanno-posando-la-piastrella-di-ceramica-sul-pavimento-posa-di-piastrelle-di.jpg?s=612x612&w=0&k=20&c=2iYWixvfMkmQi4vvmsoeHYOYbKIyGieM1xDq8TH6l7c=" alt="Servizi per alberghi"></div>
+        <div class="servizio-testo">
+            <h3>Servizi per Alberghi</h3>
+            <p>Realizziamo e ristrutturiamo strutture ricettive, seguendo ogni fase fino alla pronta apertura dell’hotel.</p>
         </div>
     </div>
 </section>
@@ -77,15 +100,58 @@
 <section id="progetti">
     <h2 class="section-title" data-aos="fade-up">Lavori recenti</h2>
     <div class="gallery">
-        <img src="https://media.istockphoto.com/id/2081431218/it/foto/electrician-working-at-a-construction-site-during-home-or-apartment-renovation-repair-or.jpg?s=612x612&w=0&k=20&c=ROO4YdyoWzIFKw9EB_XGS4efmZGw52U2GWeg0KZTQeI=" alt="Progetto 1" data-aos="fade-in">
-        <img src="https://media.istockphoto.com/id/1175951734/it/foto/operaio-in-piedi-su-impalcature-e-restauro-facciata-vecchio-edificio.jpg?s=612x612&w=0&k=20&c=mVGq70AGwS5XsBy20H3y4TEBHef6u9y7GrKdq_0SIT8=" alt="Progetto 2" data-aos="fade-in" data-aos-delay="100">
-        <img src="https://media.istockphoto.com/id/1288987741/it/foto/impalcature-per-ristrutturazioni-ristrutturazioni-su-un-tipico-edificio-danese-caratterizzato.jpg?s=612x612&w=0&k=20&c=CuW1LC013nvT1zPZ8dApWoad3KpwItHrD8iJPDk0NGQ=" alt="Progetto 3" data-aos="fade-in" data-aos-delay="200">
+        <div class="gallery-item" data-aos="fade-up" data-aos-delay="0">
+            <img src="https://media.istockphoto.com/id/2081431218/it/foto/electrician-working-at-a-construction-site-during-home-or-apartment-renovation-repair-or.jpg?s=612x612&w=0&k=20&c=ROO4YdyoWzIFKw9EB_XGS4efmZGw52U2GWeg0KZTQeI=" alt="Progetto 1">
+        </div>
+        <div class="gallery-item" data-aos="fade-up" data-aos-delay="100">
+            <img src="https://media.istockphoto.com/id/1175951734/it/foto/operaio-in-piedi-su-impalcature-e-restauro-facciata-vecchio-edificio.jpg?s=612x612&w=0&k=20&c=mVGq70AGwS5XsBy20H3y4TEBHef6u9y7GrKdq_0SIT8=" alt="Progetto 2">
+        </div>
+        <div class="gallery-item" data-aos="fade-up" data-aos-delay="200">
+            <img src="https://media.istockphoto.com/id/1288987741/it/foto/impalcature-per-ristrutturazioni-ristrutturazioni-su-un-tipico-edificio-danese-caratterizzato.jpg?s=612x612&w=0&k=20&c=CuW1LC013nvT1zPZ8dApWoad3KpwItHrD8iJPDk0NGQ=" alt="Progetto 3">
+        </div>
     </div>
 </section>
 
-<section class="cta" id="contatti" data-aos="zoom-in">
-    <h2>Richiedi un preventivo gratuito</h2>
-    <a href="mailto:info@impresaedile.it">Contattaci</a>
+<section class="cta" id="contatti" data-aos="fade-up">
+    <h2>Contattaci</h2>
+    <div class="contact-info">
+        <div class="contact-item" data-aos="fade-up" data-aos-delay="0">
+            <img src="https://cdn-icons-png.flaticon.com/128/535/535188.png" alt="Indirizzo" class="icon" />
+            <div>
+                <h3>Vieni a trovarci</h3>
+                <p>Via Orazio Vecchi 64 - 50127 FIRENZE (FI)</p>
+            </div>
+        </div>
+        <div class="contact-item" data-aos="fade-up" data-aos-delay="150">
+            <img src="https://cdn-icons-png.flaticon.com/128/818/818149.png" alt="Orario" class="icon" />
+            <div>
+                <h3>Orario d'apertura</h3>
+                <p>Lun - Ven 9:00 - 18:00<br />Sab - Dom Chiuso</p>
+            </div>
+        </div>
+        <div class="contact-item" data-aos="fade-up" data-aos-delay="300">
+            <img src="https://cdn-icons-png.flaticon.com/128/597/597177.png" alt="Telefono" class="icon" />
+            <div>
+                <h3>Rimaniamo in contatto</h3>
+                <p>+39 328 4584134<br />edilbullari@gmail.com</p>
+            </div>
+        </div>
+    </div>
+
+    <h2 data-aos="fade-up" data-aos-delay="400">Richiedi un preventivo gratuito</h2>
+    <form
+            action="mailto:info@impresaedile.it"
+            method="POST"
+            enctype="text/plain"
+            class="contact-form"
+            data-aos="fade-up"
+            data-aos-delay="550"
+    >
+        <input type="text" name="name" placeholder="Il tuo nome" required />
+        <input type="email" name="email" placeholder="La tua email" required />
+        <textarea name="message" rows="5" placeholder="Scrivi il tuo messaggio..." required></textarea>
+        <button type="submit">Invia richiesta</button>
+    </form>
 </section>
 
 <footer>
